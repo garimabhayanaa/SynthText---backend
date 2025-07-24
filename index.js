@@ -38,5 +38,5 @@ app.post('/inference', async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${PORT}/`);
+  console.log(`Server running at http://localhost:${port}/`);
 });
