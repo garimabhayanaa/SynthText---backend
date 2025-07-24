@@ -11,7 +11,7 @@ async function runInference(text, task = 'summarize', tone = 'standard') {
       temperature: 0.7
     }
   });
-
+  console.log("ACCESS_TOKEN:", process.env.ACCESS_TOKEN ? "SET" : "NOT SET");
   const config = {
     method: 'post',
     maxBodyLength: Infinity,
