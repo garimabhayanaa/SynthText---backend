@@ -28,7 +28,7 @@ async function runInference(text, task = 'summarize', tone = 'standard') {
     console.log(" Hugging Face response:", response.data);
     return response.data[0].summary_text;
   } catch (error) {
-    console.error('Inference error:', error.message);
+    console.error('ERROR:', error.response?.data || error);
     return 'Something went wrong. Please try again.';
   }
 }
